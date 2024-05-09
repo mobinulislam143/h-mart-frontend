@@ -1,0 +1,71 @@
+label{
+    margin: 7px 0;
+}
+input[type="text"]{
+    margin: 5px 0;
+    background: transparent none repeat scroll 0 0;
+    border: 1px solid #ebebeb;
+    color: #3a3a3a;
+    font-size: 16px;
+    padding-left: 20px;
+    padding-right: 10px;
+    width: 100%;
+    outline: none;
+    height: 45px;
+}
+
+.your-order-top, .your-order-bottom{
+    box-sizing: border-box;
+}
+.your-order-top ul, .your-order-bottom ul, .your-order-total ul{
+    display: flex;
+    justify-content: space-between;
+}
+.your-order-top ul li, .your-order-bottom ul li, .your-order-total ul li{
+    list-style: none;
+    font-size: 16px;
+    font-weight: 600;
+    list-style: outside none none;
+    color: #000000;
+}
+.your-order-wrap{
+    padding: 38px 45px 44px;
+    background: #ebebeb;
+}
+.your-order-middle,.your-order-total {
+    padding: 20px 0;
+    border-top: 1px solid #c6c6c6;
+    border-bottom: 1px solid #c6c6c6;
+  }
+.your-order-middle ul li{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+.your-order-bottom{
+    padding: 10px 0;
+}
+.your-order-total ul li:nth-child(2){
+    color:  #266bf9;
+}
+.panel-title a{
+    text-decoration: none;
+    font-size: 16px;
+    color: black;
+    font-weight: bold;
+}   
+.Placebtn{
+    width: 100%;
+    color: #fff;
+    background-color: #266bf9;
+    border-radius: 5px;
+    transition: 0.3s;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 18px 20px;
+    border:none;
+    
+}
+.Placebtn:hover{
+    background-color: black;
+}

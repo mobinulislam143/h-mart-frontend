@@ -1,0 +1,9 @@
+.zoom-effects {
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.zoom-effects:hover {
+    transform: scale(1.3);
+    z-index: 1;
+}

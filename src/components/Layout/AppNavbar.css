@@ -1,0 +1,68 @@
+.icons{
+    transition: 0.3s;
+    font-size: 30px;
+    border-radius: 4px;
+    padding: 3px;
+    color: #FBF8BE;
+}
+.icons:hover{
+    background: #FBF8BE;
+    color: #234E70;
+}
+
+a.loginBtn{
+    background: #234E70;
+     transition: 0.3s;
+}
+a.loginBtn:hover{
+    background-color: #FBF8BE;
+    color:  #234e70;
+  
+}
+a.nav-link.font-weight-bold.mx-3,a.dropdown-item, a.nav-link.dropdown-toggle.show {
+    transition: 0.3s;
+    
+}
+a.nav-link.font-weight-bold.mx-3:hover {
+    background: #234E70;
+    border-radius: 9px;
+    color: #FBF8BE;
+}
+
+a.nav-link.dropdown-toggle.show:hover {
+    background: #234E70;
+    border-radius: 9px;
+    color: #FBF8BE;
+}
+a.dropdown-item:hover {
+    background: #234E70;
+    border-radius: 9px;
+    color: #FBF8BE;
+}
+span.position-absolute.translate-middle.badge.rounded-pill{
+    background-color: #FBF8BE;
+    color: black
+}
+.container.rounded-2{
+  background: #F0F0F0;
+}
+.form-control{
+  color: #234e70;
+}
+.dropdown-menu.fade.show{
+  background: #FBF8BE;
+}
+
+.dropdown-menu .row ul li{
+    list-style: none;
+    line-height: 2.5;
+}
+.dropdown-menu .row ul{
+    border-right: 1px solid rgb(49, 49, 49);
+    font-weight: bold;
+    color: rgb(4, 28, 73);
+}
+.navbar-expand-lg .navbar-nav .dropdown-menu{
+    position: absolute;
+    left: -508%;
+}

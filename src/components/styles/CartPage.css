@@ -1,0 +1,155 @@
+.container h3 {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0 0 30px;
+}
+.container .table th {
+  border-top: medium none;
+  color: #000000;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 21px 45px 22px;
+  text-align: center;
+  text-transform: uppercase;
+  vertical-align: middle;
+  white-space: nowrap;
+  background-color: #ebebeb;
+}
+.cart-page-title {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0 0 30px;
+}
+.table td {
+  text-align: center;
+}
+.title a {
+  color: #3a3a3a;
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
+}
+.carts {
+  color: #266bf9;
+  font-weight: 600;
+}
+.remove,.edit {
+  font-size: 25px;
+  cursor: pointer;
+  margin: 0 5px;
+  transition: 0.2s;
+  color: #234e70;
+  transition: 0.3s;
+}
+.edit:hover, .remove:hover{
+  color: #234e70;
+  padding: 4px;
+  background-color: #234e70;
+  color: #fffddb;
+  
+
+}
+tbody tr {
+  border: 1px solid #ebebeb;
+}
+.row .same-btn {
+  background-color: #f2f2f2;
+  border-radius: 0px;
+  color: #000000;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1;
+  padding: 18px 63px 17px;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+.row .same-btn:hover {
+  background-color: #234e70;
+  color: #fffddb;
+}
+
+/* #fffddb */
+.row .others {
+  background-color: #234e70;
+  border-radius: 0px;
+  color: #fffddb;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1;
+  padding: 18px 63px 17px;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+.row .others:hover {
+  background-color: black;
+  color: #fffddb;
+
+}
+.cart-tax label {
+  margin: 10px 0;
+  font-size: 16px;
+}
+.cartTax .col{
+  background-color: #ebebeb;
+  padding: 45px 30px 50px;
+
+}
+.tax-wrapper .form-select-sm {
+  padding: 10px 8px;
+}
+.cart-tax-btn {
+  background: #234e70;
+  border-radius: 0px;
+  color: #fff;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 18px 58px;
+  transition: 0.2s;
+  border: none;
+  border-radius: 8px;
+}
+.cart-tax-btn:hover {
+  background-color: black;
+}
+.tax-wrapper h5{
+    font-size: 16px;
+    margin: 20px 0;
+}
+h5 span{
+    float: right;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.totalShipping ul li{
+    list-style: none;
+}
+.totalShipping ul{
+    margin: 20px 0;
+    padding: 0;
+}
+.totalShipping li input{
+    background: #e9e9e9 none repeat scroll 0 0;
+    border: 1px solid #d7d7d7;
+    border-radius: 5px !important;
+    color: #3a3a3a;
+    cursor: pointer;
+    height: 13px;
+    margin-right: 10px;
+    padding: 0;
+    position: relative;
+    top: 2px;
+    width: 13px;
+}
+.totalShipping li span{
+    float: right;
+}
+.tax-wrapper h4{
+    color: #266bf9;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0 0 25px;
+}

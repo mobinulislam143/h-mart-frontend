@@ -1,0 +1,56 @@
+.container h1{
+  font-size: 100px;
+  font-weight: 400;
+  line-height: 1;
+}
+.container h2{
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-bottom: 30px;
+}
+.btnGo {
+    text-decoration: none;
+    font-weight: 400;
+    line-height: 24px;
+    padding: 15px 40px;
+    text-align: center;
+    white-space: nowrap;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-radius: 500px;
+    height: auto;
+    width: auto;
+    background-color: #266bf9;
+    border: 2px solid #266bf9;
+    color: #fff;
+    transition: 0.3s;
+}
+.btnGo:hover{
+    background-color: transparent;
+    border: 2px solid black;
+    color: black;
+}
+.btnHomePage {
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: 400;
+    line-height: 24px;
+    padding: 15px 40px;
+    text-align: center;
+    white-space: nowrap;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-radius: 500px;
+    height: auto;
+    width: auto;
+    background-color: black;
+    border: 2px solid black;
+    color: #fff;
+    transition: 0.3s;
+}
+.btnHomePage:hover{
+    background-color: transparent;
+    border: 2px solid black;
+    color: black;
+}

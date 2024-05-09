@@ -1,0 +1,9 @@
+.awssld {
+  height: 350px;
+}
+.awssld__content{
+  border-radius: 15px;
+}
+.text-secondary.font-weight-bold.py-1.active{
+  text-decoration: none;
+}
