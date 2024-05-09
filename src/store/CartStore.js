@@ -20,18 +20,10 @@ const CartStore = create((set) => ({
             let res = await axios.post(`${BaseUrl}/api/SaveCartList`, postBody,{ headers: {
                 'token': Cookie.get('token') 
             }})
-            // const res = await axios.get(`${BaseUrl}/api/UserLogout`, {
-                
-            // });
+            
             return res.data['status'] === "success";
-        }catch(error){
-            console.error('Error while removing cart list:', error);
-            if (error.response) {
-                unauthorized(error.response.status);
-            } else {
-                console.error('Network error or server did not respond:', error.message);
-            }
-          
+        }catch(e){
+            unauthorized(e.response.status)
         }finally{
             set({isCartSubmit: false})
         }
@@ -44,7 +36,7 @@ const CartStore = create((set) => ({
     CartPayableTotal: 0,
 
     CartListRequest: async () => {
-        // try {
+        try {
             let res = await axios.get(`${BaseUrl}/api/CartList`, { headers: {
                 'token': Cookie.get('token') 
             }});
@@ -67,15 +59,11 @@ const CartStore = create((set) => ({
             set({CartVatTotal: vat})
             set({CartPayableTotal: payable})
 
-        // } catch (error) {
-        //        console.error('Error while removing cart list:', error);
-        // if (error.response) {
-        //     unauthorized(error.response.status);
-        // } else {
-        //     console.error('Network error or server did not respond:', error.message);
-        // }
+        } catch (e) {
+            unauthorized(e.response.status)
+
            
-        // } 
+        } 
     },
     
 
@@ -87,11 +75,11 @@ const CartStore = create((set) => ({
             }});
         } catch (error) {
             console.error('Error while removing cart list:', error);
-        if (error.response) {
-            unauthorized(error.response.status);
-        } else {
-            console.error('Network error or server did not respond:', error.message);
-        }
+            if (error.response) {
+                unauthorized(error.response.status);
+            } else {
+                console.error('Network error or server did not respond:', error.message);
+            }
         }
     },
 

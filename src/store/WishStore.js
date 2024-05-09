@@ -37,11 +37,16 @@ const WishStore = create((set) => ({
     WishTotal: 0,
     WishListRequest: async()=>{
         // try{
+          try{
             let res = await axios.get(`${BaseUrl}/api/WishList`,{ headers: {
                 'token': Cookie.get('token') 
             }})
             set({WishList: res.data['data']})
             set({WishCount: (res.data['data']).length})
+          }catch(e){
+            unauthorized(e.response.status)
+
+          }
        
     },
     RemoveWishListRequest: async(productID) => {
@@ -53,7 +58,6 @@ const WishStore = create((set) => ({
 
         }
         catch(error){
-            console.log(error)
             if (error.response) {
                 unauthorized(error.response.status);
             } else {
